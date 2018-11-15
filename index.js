@@ -48,7 +48,7 @@ if (program.characters) {
             const characters = responseCharacters.data.data.results
                     
             characters.forEach(element => {
-
+                        
                 if (Object.values(answers) == element.name) {
                     
                     let bar = new progress('Téléchargement \: :percent', { total: 100 });
@@ -78,29 +78,15 @@ if (program.characters) {
         
         url = 'comics?titleStartsWith=' + Object.values(answers)
         let fullUrl = urljoin('https://gateway.marvel.com:443/v1/public', url, '&ts=1&apikey=01907a0e43ea09e2dd60256479542cd3&hash=594983bea9a4bb32904aead39c6b11cf')
-        console.log(fullUrl)
 
         axios.get(fullUrl)
         .then((responseComics) => {
-            
+
             const comics = responseComics.data.data.results
                     
             comics.forEach(element => {
-
-                if (Object.values(answers) == element.title) {
-                    
-                    let bar = new progress('Téléchargement \: :percent', { total: 100 });
-                    let timer = setInterval(function () {
-                    bar.tick();
-                        
-                        if (bar.complete) {
-                            console.log("\nID : " + element.id + " | Comics : " + element.title)
-                            // console.log("\nDescription : " + element.description)
-                            // console.log("\nComics disponible : " + element.comics.available)
-                            clearInterval(timer);
-                        }
-                    }, 100);
-                }
+                
+                console.log("\nID : " + element.id + " | Comics : " + element.title)
 
             });
             
