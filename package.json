@@ -1,0 +1,32 @@
+{
+  "name": "njs-302",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "marvel": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ervin11/API_Marvel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ervin11/API_Marvel/issues"
+  },
+  "homepage": "https://github.com/Ervin11/API_Marvel#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "cli-table": "^0.3.1",
+    "commander": "^2.19.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.2.0",
+    "lodash": "^4.17.11",
+    "progress": "^2.0.1",
+    "superagent": "^4.0.0-beta.5"
+  }
+}
