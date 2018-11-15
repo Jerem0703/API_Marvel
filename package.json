@@ -27,6 +27,7 @@
     "inquirer": "^6.2.0",
     "lodash": "^4.17.11",
     "progress": "^2.0.1",
-    "superagent": "^4.0.0-beta.5"
+    "superagent": "^4.0.0-beta.5",
+    "url-join": "^4.0.0"
   }
 }
